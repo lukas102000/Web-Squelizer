@@ -1,12 +1,12 @@
-###  ================= Web-Squelizer Api (1.0) =================
+###   Web-Squelizer Api (1.0) 
 
-### `Contacta-me`
-### `Email`: ([lucasveraz102000@gmail.com])
-### `Facebook`: [https://facebook.com/lveraz1]
-### `Telegram`: [https://t.me/muana_mayele]
-### `WhatsApp`: [https://wa.me/message/QVIXX2HAA2EQL1]
-### `GitHub`: [https://github.com/lukas102000?tab=repositories]
-### `Linkedin`: [https://www.linkedin.com/in/lucas-veraz-382185185]
+**##** `Contacta-me`
+**##** `Email`: ([lucasveraz102000@gmail.com])
+**##** `Facebook`: [https://facebook.com/lveraz1]
+**##** `Telegram`: [https://t.me/muana_mayele]
+**##** `WhatsApp`: [https://wa.me/message/QVIXX2HAA2EQL1]
+**##** `GitHub`: [https://github.com/lukas102000?tab=repositories]
+**##** `Linkedin`: [https://www.linkedin.com/in/lucas-veraz-382185185]
 
 
 `Documento oficial do api`
@@ -21,9 +21,8 @@ Este Api permite `Criar e manipular os dados de forma fácil`, facilitando assim
 `Web-Squelizer` é suportado apenas em navegadores recentes, como `Microsoft Edge Chrome, opera, opera min, Mozilla Firefox` no 
 `Windows, Maccos ou Linux`, e também em plataformas `mobiles` incluindo o `Phoenix e outros`
 
-### ========== USO =================
+### ========== `USO` =================
 
-## inicializando o api /Web-Squelizer
 ````js
 
 const Websql = new WebSquelizer("Shops", (e)=>{ console.log(e)})
@@ -135,13 +134,3 @@ produtos.deleteOne({WHERE: {id: 1}}, (e)=>{ console.log(e)})
 produtos.update({[Op.SET]: {name: "Bananas", preco: "500,00kz"}, WHERE:{id: 2} }, ()=>{})
 
 ````
-
-[
-    `Contacta-me`
-    `Email`: ([lucasveraz102000@gmail.com])
-    `Facebook`: [https://facebook.com/lveraz1]
-    `Telegram`: [https://t.me/muana_mayele]
-    `WhatsApp`: [https://wa.me/message/QVIXX2HAA2EQL1]
-    `GitHub`: [https://github.com/lukas102000?tab=repositories]
-    `Linkedin`: [https://www.linkedin.com/in/lucas-veraz-382185185]
-]

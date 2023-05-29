@@ -3,8 +3,10 @@
 
 
 
-`Documento oficial do api`
-[(https://google.com)]
+`Baixar o Web-Squelizer-api.js`
+````html
+    <a href="./dir/Web-Squelizer-api.js" download> Baixar o Web-Squelizer-api.js versão 1.0 </a>
+````
 
 ### `Description`
 ### Web-Squelizer: 

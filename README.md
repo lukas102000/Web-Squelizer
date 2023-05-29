@@ -4,9 +4,8 @@
 
 
 `Baixar o Web-Squelizer-api.js`
-````html
-    <a href="./dir/Web-Squelizer-api.js" download> Baixar o Web-Squelizer-api.js versão 1.0 </a>
-````
+([https://github.com/lukas102000/Web-Squelizer/blob/master/dir/Web-Squelizer-api.js])
+
 
 ### `Description`
 ### Web-Squelizer: 

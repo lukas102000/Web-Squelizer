@@ -9,138 +9,135 @@
 
 ### `Description`
 ### Web-Squelizer: 
-É uma API de conexão para `Banco de dados Web sql Locais` Nos navegadores.
-Ou seja, permite conectar e salvar dados local no Web Sql 
-Este Api permite `Criar e manipular os dados de forma fácil`, facilitando assim o tempo de codificação...
+It is a connection API for `Local SQL Web Databases` in browsers.
+That is, it allows you to connect and save local data in Web Sql
+This API allows `Easily create and manipulate data`, thus facilitating coding time...
 
-`Web-Squelizer` é suportado apenas em navegadores recentes, como `Microsoft Edge Chrome, opera, opera min, Mozilla Firefox` no 
-`Windows, Maccos ou Linux`, e também em plataformas `mobiles` incluindo o `Phoenix e outros`
+`Web-Squelizer` is only supported on recent browsers such as `Microsoft Edge Chrome, opera, opera min, Mozilla Firefox` on
+`Windows, Maccos or Linux`, and also on `mobile` platforms including `Phoenix and others`
 
-### ========== `USO` ===========
+### ========== `USE` ===========
 
 ````js
 const Websql = new WebSquelizer("Shops", (e)=>{ console.log(e)})
 ````
-`Types é retorna os tipos de dado usados para criação`
+`Types is returns the data types used for creation`
 ````js
 const Types = Websql.Types()
 ````
-`Usando as opção do WebSquelizer para execução`
+`Using WebSquelizer options for execution`
 ````js
 const Op = Websql.OP()
 ````
-
+## Schema
 ````m
-*   Criando A primeira tabela de produtos!
-*   Para criar a uma table ou executar comandos sqlite usa a função Schema()
-*   E adiciona o nome da tabela e o segundo parámetro querer um objectos ou seja colunas.
-*   Este método ele criar o id como primary key
+* Creating The First Product Table!
+* To create a table or execute sqlite commands use the Schema() function
+* And add the name of the table and the second parameter to want an object ie columns.
+* This method creates id as primary key
 *
 ````
 ````js
-const produtos = Websql.Schema("produtos",{
-    name: Types.TEXT,
-    preco: Types.TEXT,
-    date: Types.TEXT
+const products = Websql.Schema("products",{
+     name: Types.TEXT,
+     price: Types.TEXT,
+     date: Types.TEXT
 })
 ````
 ## Create
 ````m
-*   Agora inserir os dados, Para inserir os dados chamamos a função Create() com os dados
-*   Vamos usar a const produtos para podemos manipular a tabela produtos.
-*   Esta const produtos ele carrega todas as funções, por isso vamos usar ele
+* Now insert the data, To insert the data we call the Create() function with the data
+* Let's use the products const so we can manipulate the products table.
+* This const products it carries all functions, so let's use it
 ````
 ````js
-let data = {
-    name: "Abacates",
-    preco: "200,00kz",
-    date: new Date()
+let date = {
+     name: "Avocados",
+     price: "200.00kz",
+     date: newDate()
 }
-// Criando ou inserindo dados...
-produtos.create(data)
+// Creating or inserting data...
+products.create(date)
 
 ````
-
-
-##  Usando findAll() Exemplo
+## Using findAll() Example
 ````m
-*   Selecionando os elementos no banco de dados
-*   Para selecionamos os dados usa a função findAll() É uma retorna os dados.
-*   Nesta função poderás executar diferentes comandos do mysql
+* Selecting the elements in the database
+* To select the data use the function findAll() It returns the data.
+* In this function you can execute different mysql commands
 *
 ````
-##  Usando ORDER BY findAll() Exemplo
+## Using ORDER BY findAll() Example
 ````js
-produtos.findAll({[Op.ORDERBY]: "id DESC"},(datas)=>{ 
-    // esta função de callback retorna dados em um objecto ou um array
-    console.log(datas)
-    // desfazer o array usando o map()
-    //datas.map((data)=>( console.log(data) ))
-    // desfando usando for()
-    for(let i=0; i < datas.length; i++){
-        //console.log(datas[i])
-        // para obter o valor da coluna 
-        //console.log(datas[i].id)
-    }
+products.findAll({[Op.ORDERBY]: "id DESC"},(dates)=>{
+     // this callback function returns data in an object or an array
+     console.log(dates)
+     // undo the array using map()
+     //datas.map((data)=>( console.log(data) ))
+     // undo using for()
+     for(let i=0; i < data.length; i++){
+         //console.log(dates[i])
+         // to get the column value
+         //console.log(data[i].id)
+     }
 })
 ````
-##   Usando where no findAll() Exemplo
+## Using where in findAll() Example
 ````js
-produtos.findAll({WHERE:{id: 1}},(datas)=>{ 
-    // esta função de callback retorna dados em um objecto ou um array
-    //console.log(datas)
-    // desfazer o array usando o map()
-    //datas.map((data)=>( console.log(data) ))
-    // desfando usando for()
-    for(let i=0; i < datas.length; i++){
-        //console.log(datas[i])
-        // para obter o valor da coluna 
-        //console.log(datas[i].id)
-    }
+products.findAll({WHERE:{id: 1}},(dates)=>{
+     // this callback function returns data in an object or an array
+     //console.log(dates)
+     // undo the array using map()
+     //datas.map((data)=>( console.log(data) ))
+     // undo using for()
+     for(let i=0; i < data.length; i++){
+         //console.log(dates[i])
+         // to get the column value
+         //console.log(data[i].id)
+     }
 })
 ````
-##  Usando ORDER BY findAll() Exemplo
+## Using ORDER BY findAll() Example
 
 ````js
-produtos.findAll({WHERE:{name:{[Op.LIKE]: "%AN%"}, [Op.ORDERBY]: {id: "DESC"} }},(datas)=>{ 
-    // esta função de callback retorna dados em um objecto ou um array
-    //console.log(datas)
-    // desfazer o array usando o map()
-    //datas.map((data)=>( console.log(data) ))
-    // desfando usando for()
-    for(let i=0; i < datas.length; i++){
-        //console.log(datas[i])
-        // para obter o valor da coluna 
-        //console.log(datas[i].id)
-    }
+products.findAll({WHERE:{name:{[Op.LIKE]: "%AN%"}, [Op.ORDERBY]: {id: "DESC"} }},(dates)=>{
+     // this callback function returns data in an object or an array
+     //console.log(dates)
+     // undo the array using map()
+     //datas.map((data)=>( console.log(data) ))
+     // undo using for()
+     for(let i=0; i < data.length; i++){
+         //console.log(dates[i])
+         // to get the column value
+         //console.log(data[i].id)
+     }
 })
 ````
-###  Usando where e AND no findAll() Exemplo
+### Using where and AND in findAll() Example
 ````js
-produtos.findAll({WHERE:{id: 1}, [Op.AND]: {preco: "500,00kz"}, [Op.OR]: {name: "Bananas"}},(datas)=>{ 
-    // esta função de callback retorna dados em um objecto ou um array
-    //console.log(datas)
-    // desfazer o array usando o map()
-    //datas.map((data)=>( console.log(data) ))
-    // desfando usando for()
-    for(let i=0; i < datas.length; i++){
-        //console.log(datas[i])
-        // para obter o valor da coluna 
-        //console.log(datas[i].id)
-    }
+products.findAll({WHERE:{id: 1}, [Op.AND]: {price: "500.00kz"}, [Op.OR]: {name: "Bananas"}},(dates)=>{
+     // this callback function returns data in an object or an array
+     //console.log(dates)
+     // undo the array using map()
+     //datas.map((data)=>( console.log(data) ))
+     // undo using for()
+     for(let i=0; i < data.length; i++){
+         //console.log(dates[i])
+         // to get the column value
+         //console.log(data[i].id)
+     }
 })
 ````
 
-###  Delete() ou deleteOne() Exemplo
+### Delete() or deleteOne() Example
 ````js
-produtos.deleteOne({WHERE: {id: 1}}, (e)=>{ console.log(e)})
+products.deleteOne({WHERE: {id: 1}}, (e)=>{ console.log(e)})
 
 ````
-###  update()
+### update()
 ````js
-produtos.update({[Op.SET]: {name: "Bananas", preco: "500,00kz"}, WHERE:{id: 2} }, ()=>{})
+products.update({[Op.SET]: {name: "Bananas", price: "500.00kz"}, WHERE:{id: 2} }, ()=>{})
 ````
-
 
 # Contacta-me
 Email: ([lucasveraz102000@gmail.com])

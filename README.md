@@ -1,12 +1,5 @@
 ### ======== Web-Squelizer Api (1.0) ====
 
-
-
-
-`Baixar o Web-Squelizer-api.js`
-([https://github.com/lukas102000/Web-Squelizer/blob/master/dir/Web-Squelizer-api.js])
-
-
 ### `Description`
 ### Web-Squelizer: 
 It is a connection API for `Local SQL Web Databases` in browsers.

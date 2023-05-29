@@ -2,8 +2,15 @@
 
 ### `Download project master`
 (https://github.com/lukas102000/Web-Squelizer/archive/refs/heads/master.zip)
-
-
+### Use in HTLM
+Use online in html
+````m
+    <script src="https://github.com/lukas102000/Web-Squelizer/blob/master/dir/Web-Squelizer-api.js"> </script>
+````
+Get from dir
+````m
+    <script src="./Web-Squelizer/dir/Web-Squelizer-api.js"> </script>
+````
 
 ### `Description`
 ### Web-Squelizer: 

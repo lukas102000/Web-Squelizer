@@ -1,8 +1,11 @@
 ### ======== Web-Squelizer Api (1.0) ====
 
 # Installation with nodejs
-````js
+````md
     npm install https://github.com/lukas102000/Web-Squelizer
+````
+````md
+    yarn add https://github.com/lukas102000/Web-Squelizer
 ````
 
 ### `Description`

@@ -1,6 +1,6 @@
-### ======== Web-Squelizer Api (1.0) ====
+# ======== Web-Squelizer Api (1.0) ====
 
-# `Download project master`
+### `Download project master`
 (https://github.com/lukas102000/Web-Squelizer/archive/refs/heads/master.zip)
 
 ### `Description`
@@ -13,7 +13,7 @@ This API allows `Easily create and manipulate data`, thus facilitating coding ti
 `Windows, Maccos or Linux`, and also on `mobile` platforms including `Phoenix and others`
 
 ### ========== `USE` ===========
-# Initializing WebSquelizer() method
+## Initializing WebSquelizer() method
 ````m
 * The new WebSquelizer() method
 * used to initialize a new database

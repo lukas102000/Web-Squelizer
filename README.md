@@ -10,7 +10,13 @@ This API allows `Easily create and manipulate data`, thus facilitating coding ti
 `Windows, Maccos or Linux`, and also on `mobile` platforms including `Phoenix and others`
 
 ### ========== `USE` ===========
-
+# Initializing WebSquelizer() method
+````m
+* The new WebSquelizer() method
+* used to initialize a new database
+* after it has two parameters: name and callback function(e).
+* When initializing give a name to the new database, check that the name is not the same as the others...
+````
 ````js
 const Websql = new WebSquelizer("Shops", (e)=>{ console.log(e)})
 ````

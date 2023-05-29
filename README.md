@@ -1,13 +1,12 @@
 ###  ================= Web-Squelizer Api (1.0) =================
-[
-    `Contacta-me`
-    `Email`: ([lucasveraz102000@gmail.com])
-    `Facebook`: [https://facebook.com/lveraz1]
-    `Telegram`: [https://t.me/muana_mayele]
-    `WhatsApp`: [https://wa.me/message/QVIXX2HAA2EQL1]
-    `GitHub`: [https://github.com/lukas102000?tab=repositories]
-    `Linkedin`: [https://www.linkedin.com/in/lucas-veraz-382185185]
-]
+
+### `Contacta-me`
+### `Email`: ([lucasveraz102000@gmail.com])
+### `Facebook`: [https://facebook.com/lveraz1]
+### `Telegram`: [https://t.me/muana_mayele]
+### `WhatsApp`: [https://wa.me/message/QVIXX2HAA2EQL1]
+### `GitHub`: [https://github.com/lukas102000?tab=repositories]
+### `Linkedin`: [https://www.linkedin.com/in/lucas-veraz-382185185]
 
 
 `Documento oficial do api`

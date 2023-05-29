@@ -44,12 +44,12 @@ const produtos = Websql.Schema("produtos",{
     date: Types.TEXT
 })
 ````
+## Create
 ````m
 *   Agora inserir os dados, Para inserir os dados chamamos a função Create() com os dados
 *   Vamos usar a const produtos para podemos manipular a tabela produtos.
 *   Esta const produtos ele carrega todas as funções, por isso vamos usar ele
 ````
-## Create
 ````js
 let data = {
     name: "Abacates",
@@ -61,6 +61,8 @@ produtos.create(data)
 
 ````
 
+
+##  Usando findAll() Exemplo
 ````m
 *   Selecionando os elementos no banco de dados
 *   Para selecionamos os dados usa a função findAll() É uma retorna os dados.

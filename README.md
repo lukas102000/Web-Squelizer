@@ -3,6 +3,8 @@
 ### `Download project master`
 (https://github.com/lukas102000/Web-Squelizer/archive/refs/heads/master.zip)
 
+
+
 ### `Description`
 ### Web-Squelizer: 
 It is a connection API for `Local SQL Web Databases` in browsers.

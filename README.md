@@ -1,5 +1,10 @@
 ### ======== Web-Squelizer Api (1.0) ====
 
+# Installation with nodejs
+````js
+    npm install https://github.com/lukas102000/Web-Squelizer
+````
+
 ### `Description`
 ### Web-Squelizer: 
 It is a connection API for `Local SQL Web Databases` in browsers.

@@ -149,6 +149,24 @@ products.deleteOne({WHERE: {id: 1}}, (e)=>{ console.log(e)})
 ````js
 products.update({[Op.SET]: {name: "Bananas", price: "500.00kz"}, WHERE:{id: 2} }, ()=>{})
 ````
+### DROP Tbale
+````js
+produtos.drop()
+````
+### Query()
+````m
+*   Query() is a function to execute mysql command in string,
+*   and, has the callback function to get datas.
+````
+````js
+produtos.query("SELECT * FROM produtos", (data)=>{
+    console.log(data)
+})
+````
+
+
+
+
 
 # Contacta-me
 Email: ([lucasveraz102000@gmail.com])

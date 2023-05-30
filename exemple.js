@@ -26,7 +26,7 @@ let data = {
     preco: "200,00kz",
     date: new Date()
 }
-//produtos.create(data)
+produtos.create(data)
 
 
 // 
@@ -103,3 +103,13 @@ produtos.findAll({WHERE:{id: 1}, [Op.AND]: {preco: "500,00kz"}, [Op.OR]: {name: 
 * Update
 */
 produtos.update({[Op.SET]: {name: "Bananas", preco: "500,00kz"}, WHERE:{id: 2} }, ()=>{})
+/*
+* DROP Tbale
+*/
+produtos.drop()
+
+
+// query()
+produtos.query("SELECT * FROM produtos", (data)=>{
+    console.log(data)
+})
